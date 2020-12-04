@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from hesiod import hmain
+from npyscreen.wgwidget import NotEnoughSpaceForWidget
 
 from module1 import func1
 from module2 import func2
@@ -16,4 +17,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except NotEnoughSpaceForWidget:
+        print("Please, make your terminal window bigger and try again :)")
