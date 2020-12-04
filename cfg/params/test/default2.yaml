@@ -1,0 +1,6 @@
+p1: 4
+p2: 5
+p3:
+  asint: 6
+  asfloat: 6.0
+  asstr: "six"

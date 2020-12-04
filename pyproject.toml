@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "hesiod-test"
+version = "0.1.0"
+description = "Simple test application for hesiod"
+authors = ["Luca De Luigi <lucadeluigi91@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+hesiod = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+mypy = "*"
+flake8 = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+exclude = '''
+(
+/(
+    .git
+    | .mypy_cache
+    | .venv
+    | build
+    | dist
+)
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 9

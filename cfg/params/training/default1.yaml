@@ -1,0 +1,6 @@
+p1: 7
+p2: 8
+p3:
+  asint: 9
+  asfloat: 9.0
+  asstr: "nine"

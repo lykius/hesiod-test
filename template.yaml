@@ -1,0 +1,7 @@
+base: "var"
+dataset: "@OPTIONS(dataset)"
+net: "@OPTIONS(net)"
+input_file: "@FILE"
+params:
+  base: "params.training.default1"
+date: "@DATE"
