@@ -7,7 +7,7 @@ from module1 import func1
 from module2 import func2
 
 
-@hmain(base_cfg_dir=Path("cfg"), template_cfg_file=Path("template.yaml"))
+@hmain(base_cfg_dir=Path("cfg/base"), run_cfg_file=Path("cfg/run.yaml"))
 def main():
     print("\n********************\n")
     func1()
