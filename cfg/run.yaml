@@ -1,0 +1,10 @@
+base: "var"
+dataset:
+  base: "dataset.cifar.cifar100"
+net:
+  base: "net.efficientnet"
+input_file: "/path/to/input_file"
+params:
+  base: "params.training.default1"
+date: 2021-01-01
+run_name: "test_with_run_file"
