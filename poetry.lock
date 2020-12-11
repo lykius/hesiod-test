@@ -91,7 +91,7 @@ pyflakes = ">=2.2.0,<2.3.0"
 
 [[package]]
 name = "hesiod"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 category = "main"
 optional = false
@@ -355,8 +355,8 @@ flake8 = [
     {file = "flake8-3.8.4.tar.gz", hash = "sha256:aadae8761ec651813c24be05c6f7b4680857ef6afaae4651a4eccaef97ce6c3b"},
 ]
 hesiod = [
-    {file = "hesiod-0.1.0-py3-none-any.whl", hash = "sha256:fd7e1c307d0fe4becb0a33f136ed8f7026e2b1fcfcb28b8a321417f69dc7f46f"},
-    {file = "hesiod-0.1.0.tar.gz", hash = "sha256:adc347e7a1629b1c339e769e59cad40eacb4c00f2c4176c9ca514b393da90ec8"},
+    {file = "hesiod-0.1.1-py3-none-any.whl", hash = "sha256:0ec4a3660cf063df379f9d22fe3a1675bed9406c8c8a8d95edc0abb69cefa528"},
+    {file = "hesiod-0.1.1.tar.gz", hash = "sha256:cb5120068c9211bac63b149ea43f674935caee0a89ac86346ecad152e0f5955c"},
 ]
 importlib-metadata = [
     {file = "importlib_metadata-3.1.1-py3-none-any.whl", hash = "sha256:6112e21359ef8f344e7178aa5b72dc6e62b38b0d008e6d3cb212c5b84df72013"},
