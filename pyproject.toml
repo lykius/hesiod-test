@@ -5,8 +5,8 @@ description = "Simple test application for hesiod"
 authors = ["Luca De Luigi <lucadeluigi91@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
-hesiod = "^0.1.0"
+python = ">=3.6,<3.9"
+hesiod = "^0.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
