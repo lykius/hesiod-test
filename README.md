@@ -21,11 +21,13 @@ Definining a new run file for each run is annoying and error prone. Thus, hesiod
 define a template file, where you use can place special placeholders to indicate that a specific
 config will be defined by the user before the run. At this time, the following placeholders are
 supported:
+* `@OPTIONS(o1,o2,o3,...)` allows you to select one of the given options
+* `@BOOL` allows you to select TRUE or FALSE
 * `@FILE` allows you to pick a file
 * `@DATE` allows you to pick a date
-* `@OPTIONS(base_dir)` allows you to specify a directory with base configs and
+* `@BASE(base_dir)` allows you to specify a directory with base configs and
 the user will be able to pick among them. For instance, in this example, you can use
-`@OPTIONS(dataset.cifar)` and the user will be asked to choose among all the base configs in the
+`@BASE(dataset.cifar)` and the user will be asked to choose among all the base configs in the
 `cfg/base/dataset/cifar` directory.  
 Have a look at the file `cfg/template.yaml` to see a plausible template file.  
 When you start a run passing a template file to hesiod, you will be asked to fill/edit the template
