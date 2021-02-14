@@ -2,7 +2,7 @@ base: "var"
 dataset: "@BASE(dataset)"
 net: "@BASE(net)"
 train: "@BOOL(true)"
-lr: "@OPTIONS(0.1,0.01,0.001)"
+lr: "@OPTIONS(0.1;0.01;0.001)"
 input_file: "@FILE(input_files/)"
 params:
   base: "params.training.default1"
