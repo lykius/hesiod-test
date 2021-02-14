@@ -1,7 +1,15 @@
 # hesiod-test
-A simple test application for the hesiod library.  
+A simple test application for the [hesiod](https://github.com/lykius/hesiod) library.
 
-# Main idea
+# How to run the example?
+Clone this repo with:
+```
+git clone https://github.com/lykius/hesiod-test
+```
+If you use [poetry](https://python-poetry.org/) you can just `poetry install` and you're all set. Otherwise, you can install hesiod simply with `pip install hesiod`.
+
+# What is hesiod?
+## Main idea
 hesiod allows you to define your configs in .yaml files (in future other formats will be supported)
 organized in a hierarchy of directories. Such directories define `base` configs, which usually do
 not change frequently in time (e.g. think about the config file about a dataset). In this example,
@@ -33,7 +41,7 @@ Have a look at the file `cfg/template.yaml` to see a plausible template file.
 When you start a run passing a template file to hesiod, you will be asked to fill/edit the template
 config... how? Run `python3 main_tui.py` to find out!
 
-# How to get configs in the program
+## How to get configs in the program
 hesiod was designed to avoid passing cfg object to every functions.  
 Thus, there are 2 ways to access config values in a program using hesiod:
 * get a copy of the whole config with the function `get_cfg_copy()` (maybe you need it in some
@@ -45,10 +53,10 @@ properly (after some check, of course) making your linter life easier (e.g. code
 work properly on the returned value). If you don't care about this feature, you can omit the `type`
 parameter and an object with type `Any` will be returned.
 
-# Output directory
+## Output directory
 In any scenario, hesiod will create an output directory for the current run, saving the final
 config file in it. You can get the path to the current output directory from anywhere in the
 program with the function `get_out_dir()`.  
 
-# Examples
+## Examples
 Please, check the python files in this repo to see how you can use hesiod!
